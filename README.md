@@ -1,7 +1,7 @@
 
 # LAB - 02
 
-## Project Name
+## Project Name - Classes
 
 ### Author: Brandyn Vay
 
