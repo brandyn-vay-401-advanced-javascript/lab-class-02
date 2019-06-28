@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/brandyn-vay-401-advanced-javascript/lab-class-02#readme",
   "devDependencies": {
+    "eslint": "^6.0.1",
     "jest": "^24.8.0"
   }
 }
