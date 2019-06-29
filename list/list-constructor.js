@@ -24,4 +24,67 @@ List.prototype.pop = function() {
   return returnValue;
 };
 
+List.prototype.shift = function () {
+  let result = this.data[0];
+  delete this.data[0];
+
+  for (let i = 1; i < this.length; i++) {
+    this.data[i - 1] = this.data[i];
+  }
+
+  delete this.data[--this.length];
+  return result;
+};
+
+List.prototype.unshift = function (input) {
+  let newData = new List();
+  newData.push(input);
+
+  for (let i = 0; i < this.length; i++) {
+    newData.push(this.data[i]);
+  }
+
+  this.data = newData.data;
+  this.length++;
+  return this.length;
+};
+
+List.prototype.forEach = function (callback) {
+  for (let i = 0; i < this.length; i++) {
+    callback(this.data[i], [i], this.data);
+  }
+};
+
+List.prototype.map = function (callback) {
+  let returnValue = new List();
+
+  for (let i = 0; i < this.length; i++) {
+    returnValue.push(callback(this.data[i], i, this.data));
+  }
+
+  return returnValue.data;
+};
+
+List.prototype.filter = function (callback) {
+  let returnValue = new List();
+
+  for (let i = 0; i < this.length; i++) {
+    if (callback(this.data[i], i, this.data)) { 
+      returnValue.push(this.data[i]); 
+    }
+  }
+
+  return returnValue.data;
+};
+
+List.prototype.reduce = function (callback, start) {
+  let acc = start;
+
+  for (let i = 0; i < this.length; i++) {
+    acc = callback(acc, this.data[i], i, this.data);
+  }
+
+  return acc;
+};
+
 module.exports = List;
