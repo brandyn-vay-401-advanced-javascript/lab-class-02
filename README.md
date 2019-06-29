@@ -1,6 +1,8 @@
 
 # LAB - 02
 
+[![Build Status](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-02.svg?branch=master)](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-02)
+
 ## Project Name - Classes
 
 ### Author: Brandyn Vay
