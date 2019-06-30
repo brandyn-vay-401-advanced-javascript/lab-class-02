@@ -7,8 +7,8 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/brandyn-vay-401-advanced-javascript/lab-class-02/pull/6)
-* [travis](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-02)
-![Build Status](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-02.svg?branch=master)
+* [travis](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-02/builds/117400080)
+* ![Build Status](https://travis-ci.com/brandyn-vay-401-advanced-javascript/lab-class-02.svg?branch=master)
 
 ### Modules
 #### vehicle-class.js
