@@ -19,4 +19,4 @@
   
 #### Tests
 * How do you run tests?
-  *Type in to the terminal npm test and the test will start to run
+  Type in to the terminal npm test and the test will start to run
